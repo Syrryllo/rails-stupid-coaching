@@ -1,0 +1,13 @@
+<h1>Stupid Coaching<h1>
+
+<% if params[:user_question] == 'I am going to work'
+        user_answer = 'Great!'
+    elsif
+        params[:user_question].include?('?')
+        user_answer = 'Silly question, get dressed and go to work!'
+    else
+        user_answer = "I don't care, get dressed and go to work!"
+    end
+%>
+
+<h2> <%= user_answer %> <h2>
